@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/wallBackground">
+
+    <Spinner
+        android:id="@+id/annotations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:entries="@array/annotate_arrays"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/Gray" />
+    android:prompt="@string/annotations" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/wallBackground"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_weight=".5"
+            android:textSize="18dp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/Gray"
+            android:hint="@string/fname_hint"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:ems="10"
+            android:imeOptions="actionNext"
+            />
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_weight=".5"
+            android:textSize="18dp"
+            android:textColorHint="@color/Gray"
+            android:hint="@string/lname_hint"
+            android:textColor="@color/textColor"
+            android:inputType="textPersonName"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:text="Address"
+            android:textColor="@color/textColor"
+            />
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/textColor"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:inputType="text"
+            android:imeOptions="actionNext"/>
+
+
+        <Spinner
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:entries="@array/city_arrays"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:textSize="18dp"
+            android:prompt="@string/city"
+            android:textColor="@color/textColor"
+            android:backgroundTint="@color/Gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layerType="software"
+            android:textSize="18dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:text="Country"
+            android:textColor="@color/textColor"/>
+
+
+
+        <AutoCompleteTextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/autocomplete_country"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:inputType="text"
+            android:textColor="@color/textColor"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:text="Postal Code"
+            android:textColor="@color/textColor"/>
+
+        <EditText
+            android:id="@+id/postalcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:inputType="textPostalAddress"
+            android:textColor="@color/textColor"
+            android:imeOptions="actionNext"/>
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textSize="18dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="10dp"
+            android:text="Confirm"/>
+    </LinearLayout>
+
+</LinearLayout>

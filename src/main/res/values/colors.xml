@@ -3,6 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="LightCoral">#F08080</color>
-    <color name="Red">#FF0000</color>
+    <color name="wallBackground">#000000</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="Gray">#808080</color>
+    <color name="DarkSlateBlue">#4169E1</color>
 </resources>
