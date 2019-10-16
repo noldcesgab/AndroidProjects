@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <AutoCompleteTextView
+        android:id="@+id/simpledropdown"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LightCoral"
+        android:textColorHint="@color/Red"
+        android:text="Seneca Colleges" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:text="Android">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/androidgrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:numeric="integer"
+        android:gravity="right"/>
+
+    </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="left"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:text="Java">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/javagrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:numeric="integer"
+                android:gravity="right"/>
+
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="left"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:text="XML">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/xmlgrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:numeric="integer"
+                android:gravity="right"/>
+
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="left"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:text="OOP">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/oopgrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:numeric="integer"
+                android:gravity="right"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/min_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="MIN"/>
+
+        <Button
+            android:id="@+id/avg_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="20sp"
+            android:text="AVG"/>
+
+        <Button
+            android:id="@+id/max_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="MAX"/>
+
+    </LinearLayout>
+
+</LinearLayout>

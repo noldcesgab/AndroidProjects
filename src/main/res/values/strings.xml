@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GradesCalculator</string>
+    <string name="about_action">About</string>
+    <string name="min_str">Min</string>
+    <string name="avg_str">Average</string>
+    <string name="max_str">Max</string>
+    <string name="about_str">Look into our school for a variety of  IT programs: http://www.senecacollege.ca.</string>
+</resources>
